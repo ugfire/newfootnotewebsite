@@ -1,0 +1,16 @@
+.wow {
+  border-radius: 5px;
+}
+.text-primary {
+  color: #0215a2 !important;
+}
+
+.hometitle {
+  font-size: 300%;
+}
+p,
+.accordion-body {
+  font-family: "Poppins", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
