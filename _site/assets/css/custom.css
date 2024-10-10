@@ -9,6 +9,9 @@
   font-size: 300%;
 }
 p,
+li,
+a,
+span,
 .accordion-body {
   font-family: "Poppins", serif !important;
   font-weight: 400;
