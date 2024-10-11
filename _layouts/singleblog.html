@@ -1,32 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="d-block">
-    {% include header.html %}
-
-    <section class="py-5 d-block">
-      <div class="container">
+<body class="m-0 p-0">
+  <div id="preloader">
+    <div class="preloader-close">x</div>
+    <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+    </div>
+</div>
+  <!-- search popup start -->
+  <div class="search__popup">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="mt-4">{{ content }}</div>
+            <div class="col-xxl-12">
+                <div class="search__wrapper">
+                    <div class="search__top d-flex justify-content-between align-items-center">
+                        <div class="search__logo">
+                            <a href="index.html">
+                                <img src="assets/img/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="search__close">
+                            <button type="button" class="search__close-btn search-close-btn">
+                                <i class="fal fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="search__form">
+                        <form action="#">
+                            <div class="search__input">
+                                <input class="search-input-field" type="text" placeholder="Search Here...">
+                                <span class="search-focus-border"></span>
+                                <button type="submit">
+                                    <i class="far fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- search popup end -->
+ <!-- side toggle start -->
+<aside>
+  <div class="side-info">
+    <div class="side-info-content">
+      <div class="offset__widget offset__header">
+        <div class="offset__logo">
+          <a href="index.html">
+            <img src="assets/img/footer-logo.png" alt="logo" />
+          </a>
+        </div>
+        <button class="side-info-close">
+          <i class="fal fa-times"></i>
+        </button>
+      </div>
+      <div class="mobile-menu d-xl-none fix"></div>
+      <div class="offset__widget offset__support">
+        <ul class="mobile-nav__contact list-unstyled">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:needhelp@Washup.com">needhelp@footnote.com</a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+673853605985">+673 853 605 985</a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> 7300-7398 Colonial Rd,
+            Brooklyn, NY 11209
+          </li>
+        </ul>
+        <div class="mobile-nav__top">
+          <div class="mobile-nav__social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
           </div>
+          <!-- /.mobile-nav__social -->
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</aside>
+<div class="offcanvas-overlay"></div>
+<div class="offcanvas-overlay-white"></div>
+<!-- side toggle end -->
+  {% include header.html %}
 
-    {% include footer.html %}
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("qqJnbf812rTIUEALz");
-      })();
-    </script>
-    <script
-      id="dsq-count-scr"
-      src="//https-sirenconstructionltd-com.disqus.com/count.js"
-      async></script>
-  </body>
+  <main class="p-0 m-0">
+    
+      {{ content }}
+    
+  </main>
+
+  {% include footer.html %}
+
+  
+</body>
 </html>

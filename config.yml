@@ -3,9 +3,8 @@ description: "Footnote Consults Ltd - Engineering the future."
 baseurl: "" # Set to "/your-github-username.github.io/" if using GitHub Pages
 url: "https://footnoteconsults.com/" # Your website's URL
 theme: null # No theme used, we'll use custom Bootstrap
-permalink: /:year/:month/:day/:title/ # Optional: Customize blog post permalink structure
 # _config.yml
-excerpt_separator: <!--more-->
+client_separator: <!--more-->
 
 
 

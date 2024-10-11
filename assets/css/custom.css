@@ -17,3 +17,34 @@ span,
   font-weight: 400;
   font-style: normal;
 }
+.smallcategory {
+  font-size: 11px;
+}
+.smallcategory span {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #0215a2;
+  color: rgb(255, 255, 255);
+}
+.smalltitle {
+  color: #0215a2;
+  font-size: 18px;
+}
+.smalltitle:hover {
+  text-decoration: underline;
+}
+.backlink {
+  background-color: #0215a2;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+table {
+  color: #0215a2;
+  width: 100%;
+  text-align: left;
+}
+.text span {
+  color: #0215a2;
+}
